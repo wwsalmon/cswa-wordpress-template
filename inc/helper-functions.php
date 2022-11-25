@@ -19,17 +19,17 @@ function catch_that_image($post_id)
     return $first_img;
 }
 
-function sz_stripall($str){
+function cswa_stripall($str){
     return wp_strip_all_tags(strip_shortcodes($str));
 }
 
-function sz_author_with_link($id){
+function cswa_author_with_link($id){
     return "<a href=\"" . get_author_posts_url($id) . "\">" . get_the_author_meta("display_name", $id) . "</a>";
 }
 
 // adapted from from https://stackoverflow.com/a/12445298, with modification
 
-function sz_get_snippet( $str, $wordCount = 10 ) {
+function cswa_get_snippet( $str, $wordCount = 10 ) {
     $words = preg_split(
         '/([\s,\.;\?\!]+)/',
         $str,

@@ -1,0 +1,22 @@
+:root {
+    --accent-color: #B6202B;
+}
+
+body {
+    margin: 0;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    padding: 0 16px;
+    box-sizing: border-box;
+}

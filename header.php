@@ -12,17 +12,8 @@ wp_head();
 
 </head>
 <body>
-<div class="sz-navbar sz-template-navbar">
-    <div class="sz-navbar-inner sz-navbar-right">
-        <div class="navbar-logo"><a href="<?php echo get_home_url() ?>"><?php echo get_bloginfo("name") ?></a></div>
-        <input type="checkbox" id="sz-navbar-check">
-        <label for="sz-navbar-check" class="sz-navbar-hamburger">☰</label>
-        <div class="sz-navbar-items">
-            <?php
-            foreach (get_menu_items_by_registered_slug("primary") as $item){
-                echo "<div class=\"sz-navbar-item\"><span><a href=\"" . $item->url . "\">" . $item->title . "</a></span></div>";
-            }
-            ?>
-        </div>
-    </div>
-</div>
+<nav>
+    <img style="width: 64px; height: 64px;" src="<?php echo get_template_directory_uri() . '/img/logo.png'; ?>">
+    <span style="font-weight: 700; font-size: 28px; margin-left: 24px">CSWA</span>
+    <a href="" style="display: block; font-size: 20px; color: white; background-color: var(--accent-color); padding: 8px 16px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-left: auto; text-decoration: none">Get involved</a>
+</nav>

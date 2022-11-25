@@ -1,5 +1,5 @@
 <?php
-function sz_template_customizer($wp_customize)
+function cswa_template_customizer($wp_customize)
 {
     $wp_customize->add_section('sz-template-section', array(
         'title' => "Theme Custom Settings"
@@ -23,4 +23,4 @@ function sz_template_customizer($wp_customize)
     ));
 }
 
-add_action('customize_register', 'sz_template_customizer');
+add_action('customize_register', 'cswa_template_customizer');
