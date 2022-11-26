@@ -95,7 +95,7 @@ nav {
     .home-left {
         width: 67%;
         box-sizing: border-box;
-        padding-right: 32px;
+        padding-right: 48px;
     }
 
     .home-right {
@@ -127,7 +127,6 @@ nav {
     font-weight: 700;
     font-size: 18px;
     letter-spacing: 1px;
-    margin-top: 48px;
 }
 
 p, h1 {

@@ -20,3 +20,17 @@ function remove_admin_bar() {
 }
 
 add_action('after_setup_theme', 'remove_admin_bar');
+
+function cswa_widgets_init() {
+
+    register_sidebar( array(
+        'name'          => 'Home right sidebar',
+        'id'            => 'home_right_1',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<p class="h-uppercase">',
+        'after_title'   => '</p>',
+    ) );
+
+}
+add_action( 'widgets_init', 'cswa_widgets_init' );

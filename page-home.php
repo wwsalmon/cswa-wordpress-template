@@ -26,7 +26,7 @@
             <a href="<?php echo get_site_url() . "/updates"; ?>" style="margin-bottom: 32px; display: block; color: var(--accent-color); text-align: right; font-weight: 700;">All updates ></a>
         </div>
         <div class="home-right">
-            <p class="h-uppercase">@_cswa on Instagram</p>
+            <?php if ( is_active_sidebar( 'home_right_1' ) ) : dynamic_sidebar( 'home_right_1' ); endif; ?>
         </div>
     </div>
 <?php
