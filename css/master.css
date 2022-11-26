@@ -118,7 +118,7 @@ h3.article-title, .article-title a {
     margin-right: 8px;
 }
 
-.article-date {
+.article-date, .single-date {
     font-size: 14px;
     color: #666;
     font-weight: 500;
@@ -138,11 +138,32 @@ img.article-image {
         height: 240px;
     }
 
-    .article-date, .article-category {
+    .article-date, .article-category, .single-date {
         font-size: 20px;
     }
 
     h3.article-title, .article-title a {
         font-size: 28px;
     }
+}
+
+.container, .post-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 48px 24px;
+}
+
+.post-container p {
+    line-height: 1.5;
+    font-size: 18px;
+    margin: 24px 0;
+}
+
+.post-container a {
+    color: var(--accent-color);
+}
+
+.single-title {
+    color: #222;
+    margin: 16px 0;
 }

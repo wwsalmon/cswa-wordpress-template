@@ -1,0 +1,1 @@
+<a href="<?php echo get_site_url() . "/updates"; ?>" class="h-uppercase" style="margin-bottom: 32px; display: block; color: var(--accent-color)">< All updates</a>
