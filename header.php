@@ -19,5 +19,5 @@ wp_head();
     <a href="<?php echo get_site_url(); ?>" style="color: #222; text-decoration: none">
         <span class="nav-title">CSWA</span>
     </a>
-    <a href="" class="nav-button">Get involved</a>
+    <a href="<?php echo get_site_url() . "/get-involved"; ?>" class="nav-button">Get involved</a>
 </nav>
