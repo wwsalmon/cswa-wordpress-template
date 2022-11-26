@@ -7,7 +7,7 @@
             <p class="p-content" style="opacity: 0.75">Students working in thoughtful solidarity with organized labor
                 fights at the 5Cs and Inland Empire</p>
         </div>
-        <img class="hero-right" src="<?php echo get_template_directory_uri() . '/img/hero.jpg'; ?>">
+        <img class="hero-right" src="<?php echo wp_get_attachment_url(get_theme_mod('cswa-home-image'))?>">
     </div>
     <div class="home-container">
         <div class="home-left">
