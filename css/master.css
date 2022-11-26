@@ -13,13 +13,59 @@ nav {
     width: 100%;
     left: 0;
     right: 0;
-    height: 96px;
+    height: 64px;
     display: flex;
     align-items: center;
     background-color: #eee;
     padding: 0 16px;
     box-sizing: border-box;
     z-index: 10;
+}
+
+.nav-logo {
+    width: 48px;
+    height: 48px;
+    display: block;
+}
+
+.nav-title {
+    font-weight: 700;
+    margin-left: 16px;
+    font-size: 20px;
+}
+
+.nav-button {
+    background-color: var(--accent-color);
+    display: block;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: auto;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 4px 8px;
+}
+
+@media (min-width: 700px) {
+    nav {
+        height: 96px;
+    }
+
+    .nav-logo {
+        width: 64px;
+        height: 64px;
+    }
+
+    .nav-title {
+        font-size: 28px;
+        margin-left: 24px;
+    }
+
+    .nav-button {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
 }
 
 .hero-right {
