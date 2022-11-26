@@ -20,3 +20,53 @@ nav {
     padding: 0 16px;
     box-sizing: border-box;
 }
+
+.right-col {
+    order: 2;
+    width: 100%;
+}
+
+.left-col {
+    background-color: #222;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px 24px;
+}
+
+@media (min-width: 900px) {
+    .hero {
+        display: flex;
+    }
+
+    .left-col {
+        order: 1;
+        width: 33%;
+        box-sizing: border-box;
+        flex-shrink: 0;
+    }
+
+    .right-col {
+        object-fit: cover;
+        width: 67%;
+        object-position: center center;
+        height: calc(100vh - 96px);
+    }
+}
+
+.h-uppercase {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+p, h1 {
+    margin: 0;
+}
+
+.p-content {
+    font-size: 20px;
+    line-height: 1.5;
+}
