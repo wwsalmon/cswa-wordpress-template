@@ -21,3 +21,9 @@ wp_head();
     </a>
     <a href="<?php echo get_site_url() . "/get-involved"; ?>" class="nav-button">Get involved</a>
 </nav>
+<?php if (get_theme_mod('cswa-banner-check')){?>
+<a href="<?php echo get_theme_mod('cswa-banner-link') ?>"
+   style="width: 100%; display: block; padding: 8px; background-color: var(--accent-color); color: #fff; font-weight: 700; font-size: 18px; text-align: center; text-decoration: none; box-sizing: border-box">
+        <?php echo get_theme_mod('cswa-banner-blurb')?>
+    </a>
+<?php } ?>
