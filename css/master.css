@@ -212,3 +212,17 @@ img.article-image {
     color: #222;
     margin: 16px 0;
 }
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.page-numbers {
+    display: block;
+    margin-right: 12px;
+}
+
+a.page-numbers {
+    color: var(--accent-color);
+}

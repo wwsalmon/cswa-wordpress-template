@@ -7,6 +7,7 @@
             while (have_posts()) : the_post();
                 get_template_part("template_parts/article");
             endwhile;
+            the_posts_pagination();
         endif;
         ?>
     </div>
