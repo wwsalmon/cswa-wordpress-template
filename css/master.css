@@ -226,3 +226,7 @@ img.article-image {
 a.page-numbers {
     color: var(--accent-color);
 }
+
+#searchform > div {
+    margin: 16px 0;
+}
